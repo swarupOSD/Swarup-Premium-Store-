@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarup Premium Store - Security</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #00d4ff;
+            --dark-bg: #040916;
+            --card-bg: rgba(13, 24, 48, 0.95);
+        }
+        body { 
+            background: var(--dark-bg); 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-family: 'Segoe UI', sans-serif; 
+            color: white; 
+            margin: 0; 
+            cursor: pointer; /* User ke click korte encourage korbe */
+        }
+        
+        .loader-card {
+            background: var(--card-bg);
+            border: 2px solid var(--primary-blue);
+            border-radius: 25px;
+            padding: 40px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.2);
+        }
+        
+        .header-title { font-weight: 800; font-size: 22px; letter-spacing: 2px; color: white; text-transform: uppercase; margin-bottom: 25px; }
+        .header-title span { color: var(--primary-blue); }
+        
+        .progress-container { background: rgba(255,255,255,0.05); height: 14px; border-radius: 50px; margin: 25px 0; overflow: hidden; border: 1px solid rgba(0, 212, 255, 0.2); }
+        .progress-bar-fill { background: linear-gradient(90deg, #007bff, var(--primary-blue)); width: 0%; height: 100%; transition: 0.1s linear; }
+        .percent { font-size: 32px; font-weight: 800; color: var(--primary-blue); margin-bottom: 10px; }
+
+        .btn-yt { background: #ff0000; color: white; border: none; padding: 12px; border-radius: 12px; font-weight: bold; width: 100%; text-decoration: none; display: block; margin-top: 15px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body onclick="playWelcomeOnce()">
+
+<div class="loader-card" id="loaderSection">
+    <div class="header-title">SECURITY <span>SYSTEM</span></div>
+    <p style="color:#aaa;">Checking Subscription Status...</p>
+    <div class="progress-container">
+        <div id="bar" class="progress-bar-fill"></div>
+    </div>
+    <div id="percText" class="percent">0%</div>
+</div>
+
+<div class="loader-card hidden" id="subSection">
+    <div class="header-title">SUBSCRIBE <span>TO UNLOCK</span></div>
+    <p style="color:#aaa;">Please subscribe to our channel to access the store.</p>
+    <a href="https://youtube.com/@YOUR_CHANNEL_LINK" target="_blank" class="btn-yt" onclick="redirectToLogin()">SUBSCRIBE NOW</a>
+</div>
+
+<script>
+    let voicePlayed = false;
+
+    // Voice Function
+    function welcomeVoice() {
+        if ('speechSynthesis' in window) {
+            let msg = new SpeechSynthesisUtterance();
+            msg.text = "Welcome to Swarup Premium Store";
+            msg.lang = 'en-US';
+            msg.rate = 1; 
+            msg.pitch = 1.2; // Ektu premium tone-er jonno pitch barano hoyeche
+            window.speechSynthesis.speak(msg);
+            voicePlayed = true;
+        }
+    }
+
+    // Jodi auto-play block hoy, tobe screen-e click korlei voice bajbe
+    function playWelcomeOnce() {
+        if (!voicePlayed) {
+            welcomeVoice();
+        }
+    }
+
+    // Loader Logic
+    function startLoader() {
+        let bar = document.getElementById("bar");
+        let txt = document.getElementById("percText");
+        let width = 0;
+        
+        // Voice call kora holo load houar sathe sathe
+        welcomeVoice();
+
+        let interval = setInterval(() => {
+            if(width >= 100) {
+                clearInterval(interval);
+                document.getElementById("loaderSection").classList.add("hidden");
+                document.getElementById("subSection").classList.remove("hidden");
+            } else {
+                width++;
+                bar.style.width = width + "%";
+                txt.innerText = width + "%";
+            }
+        }, 40);
+    }
+    
+    // Subscribe click logic
+    function redirectToLogin() {
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 2000);
+    }
+
+    // Page load holei loader shuru hobe
+    window.onload = startLoader;
+</script>
+
+</body>
+</html>

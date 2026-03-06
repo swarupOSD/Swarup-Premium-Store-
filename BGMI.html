@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWARUP PREMIUM STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #0d1117; 
+            margin: 0; padding: 20px; 
+            font-family: 'Poppins', sans-serif; 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+
+        /* Header */
+        .header { text-align: center; margin-bottom: 40px; margin-top: 30px; }
+        .title { font-size: 36px; font-weight: 800; color: white; position: relative; }
+        .title span { color: #00d4ff; }
+        .v10-badge { 
+            font-size: 10px; background: #00d4ff; color: #0d1117; 
+            padding: 2px 8px; border-radius: 6px; font-weight: bold; 
+            position: absolute; top: -10px; right: -30px; 
+        }
+        .subtitle { font-size: 14px; color: #aaa; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; }
+
+        /* Development Card */
+        .dev-card { 
+            background: #161b22; 
+            width: 100%; 
+            max-width: 400px; 
+            border-radius: 25px; 
+            border: 1px solid #30363d; 
+            overflow: hidden; 
+            margin-bottom: auto; 
+        }
+        .dev-header { background: #ffaa00; color: black; text-align: center; padding: 10px; font-size: 13px; font-weight: bold; }
+        .dev-content { padding: 30px; text-align: center; }
+        .dev-icon { 
+            width: 80px; height: 80px; background: #21262d; 
+            border-radius: 15px; margin: 0 auto 20px; 
+            display: flex; align-items: center; justify-content: center;
+        }
+        .btn-stay { 
+            background: transparent; border: 1px solid #30363d; 
+            color: #8b949e; padding: 12px 30px; border-radius: 12px; 
+            font-size: 14px; margin-top: 20px; cursor: not-allowed;
+        }
+
+        /* Footer */
+        .footer { padding: 20px; color: #484f58; font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="title">SWARUP <span>STORE</span><span class="v10-badge">V10</span></div>
+    <div class="subtitle">SECURE EDITION</div>
+</div>
+
+<div class="dev-card">
+    <div class="dev-header">UNDER DEVELOPMENT</div>
+    <div class="dev-content">
+        <h4 style="margin-bottom: 15px; font-size: 24px;">Coming Soon</h4>
+        
+        <div class="dev-icon">
+            <img src="data:image/webp;base64,UklGRpQRAABXRUJQVlA4IIgRAACQSwCdASqhAJsAPtlYokwoJSqislWdmVAbCWwAzIwhy1fP/mB7Q1p/xHF0HC7wc4P/G9Y36j9g3nr+Z39s/V39JH+V9QD+q9S76Bvl2ezr/fv/DkUst9t7s5Nhcs/33h7NABf8rNaAoCeUd3/v2rfgKOQ7A+HkmZgLkEfoRbTHZ7Wsf2y8edcaOwixdP2E1vBFA1QOPv5Vfht74p4/kUrKYVVngO8NsSQX/mVs+PiK8tLqEfbPDDl2II9b9+IFxg/NMyv8kUEiMB8+a0npiPAUjkwszNOw/YSl5pVQYGg2O+mPDp2OAUl1MliMpdVNj98sLZIADKxYUewcunjMQ3JWf9I/cZGLnU8u17wgYl0ZzUniHiwe3r51Y/x2+PHJllDZCfR5rfm5zBEuQyYvGrUuFJ2rrdvPWy0vgp1MH91qYcTim7e6VKxWak3jAQ/m5vjMubONSOjRMj3In6zN3XRPyxmq9AGOAr3CVEwzPHktbR5NeHiuGeTWuPVpbVMN/GlGp6mULIdizynWyfKiFSbfkwkIRUCgH95t0Qffg2Qe7ALPoWrlxnk399yJFsN19MP5ZUdbz+6quF8e5zI7uaarMdybVdZ/tABG5LVUdkZOs9+vrNzSs1XkOGi9a0BZpk0ODjVamOnC1/eX+KW+pRtiSUUaSnsknBtQdL79F8kMKCHg/r+DTvo01PcJCE16p3SDKFrGawHZeHWqYm5zaYk9cPjXT/l3CYt39/Qs1yA3cQ6Wdk6VjeT8wPxZ+h26DFQb8m7GZ6jHsYUsoQMH3BSHPgt+/nVP34B4ht72xzdWTxNPewUAAP6jouGXBjMbG/Uh//NQ/QabanOhCC1tOeOOA/l3QlamKJVaU/C2lG63zdM45cI/tSR9GYUkzHnuU+5zJbn9ovVpebPJ3oUedTerNTrL6rq1emqr+xyxZbt/U36V2IAmQEhoRGg5/bhwj/Rs/g4Py9TXBBCwxGmz/TVZ/W84fq/cZ6p+wIwkLhdOk9rOleKXG6uyCUpxws2NSmfMRa1We8SuudM9QsTWC+0rrfauxjk15RWMV4ey7rilXYDHldHfyltPEq76j0rNhjDtQ5F5Xy7QHku+XadIQid9jYqcOGbs+YUkkBdbLdrETlyBjojTOHfAIFlkebnF9eLv/ideJ5QsIWlF8u95wZyxyjyuQtNckofrioMAjawpUaFdAuX8poMTHqf5MOC/P8RvYGJDv3qSVMn8eFGLorbxYX4e2wboXcDGwEOwCfLcpOag9k5WYKpT0F17vaYa0Fj43+fwO0ynn7+GZ8VGVxH0aRRop3p2/4gzXaJMMqJxcaUguzlxn89QX5kFzS+0f/t1ngLq/NWmmR7sLOJUvl/6R4wxuzyKoGOlWcclnzeYi3PKLt9el52LSvnaeqEI/b+lOJDDZP27XVUkqfjUu2gUUFyEJLOGaQ40tIUcsPWGnD75xbRNwES5b6Mt8KhhlB7Z6wlxHwjmb11YmotA4a6jHNSzeV6tE1oI8HyZ8TiXODsg4xuu/cMuIYu1lVo52c1Z63N9adKsPUzBhylhOyzRrpLkeKbsU+AsKKu4z4a/FMnUw2JG0u+kjfJhvUZtpeWmnbYSNtDrJmJiIf0z/ZNotxw9EjbSd/qzYTTxCS61y5G7/Sri/H+pnZeNwtz7NUjh83mYyNFldeZl6MGcyd72kfCtrSxRoVSUyO5sr02g6xuokEYVSVKnRVQRacIY63RNzWUGMfI0H+EoML7JqAieUx3jVuwuxJ7C4c8FoWuDH4E/FFcjJ92LpDKPexaO0bjYrmUBUylK8R/15qzjdYEbByr35bjnxFomfoHr/W+PTQNWMfkzEB9rgU0+BxTRMnZM7Af0lfmcns8rq18DzGNZvmT4P2lJs1BRWCJusTi4XL2qJ12a95uI5Yf4SilDobO1HxQ6C6pVXocAPNjbzSwBeQiOpNAdRFuGX+hnAX3mDz0OSHIpco73Wm9b6+Fli30w19Kuj2aIN1oxbuT1o1c04n9MQulr/FFzktKvUs0d9+/waveSKFuqyQkP+s+jmdy+LQcV/RwDRYaet/sntncaz4hzq8zPf8oZD2oliNpd/cQnjWvuKfOT+WnROtuyhQKz2e39snxSPdPafsreGBQtpF3NFGSyZQu4iq4mJ99pF1k57SUJ/hIdrNmDgTh4NhTGoyCeTTicJCPzoz8kdlVmRZBM57xM4s0Xl39DnRJXmRrN0gCgvQkXs9VzUR+Sk0ePI30gi44T8NfTw0iCqrsvcuSut5UfY47kVy60ZadcXYzqCPmLxNa0L6z+QYnz7SA47nGM8EpbP+yx7Gq0VcXdpZAt/NshiWe8M5ETGMz9DkvUTRwR92za/zMU8eCvg6ZNm0uMs8tguJExKghdVw9O3uHc3VkWz0rzYgCqCT5A9np4IACANJ4aDbQp64XJ+fjrV8+d9rmgyHUpBv5AWOU7YrDtWI6t9W4SdaT1XkIVrAwKGxgbm0f/NHtQELeHsfLpJDDzw27sWdSiAyxsr4YZq6qHg9TaaPZA7je0Rk6CUm4Ba6A54AcQWWDDNxYgXWWPtK9HK2QIwjlrhoBGXsF5iepc9VOtleLi6ZosxocI/UTZJVMDq+B1MWABqeZMIP5Ro3I1lm6XIqqyC0UVU3atynp/UfBGvCGmOdD3IbDy+Bv9PuGQ+stBlgm4fgPZbg4op/rrGD6pBqwt2m5yRyl9jyhz3jaYeKblRg1L/Tat/Zz9jktaYZwLRI6z53q7YWhndTIDvubke9r/4i1QbtAD/YJzNmVD17xdQlKzioNI1YFkxqZ4Jgti+XvbbR+UTDRjzgX2+Ad+lXRzslTUW8zmCTWUhMsXAXYhnm1hOvtP0gxNx39yUIHTR5uOcgQDvapehR6TiyfFnYV7LTmpW3zLNk/MjtRKxntaRBMkSlB95Gns+N/ONr3lCiWS88XDdUT+omBuj8XDB677LmRvf94ROQCckR997HsDbibYTmceCavCopbYJOuJLxqEy5bP/cvVO7KLE7jgwltL6BVXRIuaj+XlSMoUOutsooFZjR4wGKpefsd3RIJ97C8LM7Ruw2086VDuS7ZT5DLJ7wrtpLWzyAZX+IRgRMeaGncZlLRh/4Xn1HqJ/1zg1mTioSSLWqyruoNqZCydE59ysG5MgsijheiUcqm72xbP+YIUH/0uPo6QSydy75pDZgeuXNosMn4hfNwwhlsr7juI7ijiaMRkYeimwqWpN3nbSptrFOo/6EpGKAVp518oHOr7JN45y/Q56jgapOQfr7gR3ep/RpElojUZJDNyUwHXlPAPnAuzzeXQ8BpgXWZ7om7/E6zShOhwZEnco8Rrd8dY+80gLTQkz3e2DwRqB3xOPiwsLmnZRAsuh4CJNIe0ryj3FPh7+iIx3FAA69i0EWXFtOY9oON2iz2xm63GFszgSr1GQR01N60gJiJuvDmdSfk5hF2Er3nG2+mK6ipoXdkZCSKQ/oZvE2Mrs/dOWQOZ025mHwoIP22urrybGvAr+ecJA5nXsbxxRKGTEbkCDQo9f4tvQs2zjuFX+b4C+ArgTKMBRimy/fDr+xZtfZAyP8xA4mKR5V9mCJKnjYxpwuRQv4mLDt4mv7FJFt18sZ1jnT3VvMssBoG3T7OMLvRwJ04vq1BmsN4wZYIlIk7SsHpC6pTY8X6hMvOyA2co9AdjtHuYST3A8pZjpd/8y7RovDrANb4rn4Az5vfVS9lT9giv8aosP2LrERSvQWzMYGzgg1eDzW2IAOluhGJgtUzmciO3/IHrHus/viOCUpyltQ0EvXkJ4xu4h6hf90XfMzSc4T1UlWL/MrSaAVLEAMf1dBNqeLjvFGfrcQ5UPkjSTzY7DPLdLclLi0J8GwyEiOG8ZlQvomlzO6rxgD6Btjm2qARI6VfFUBcMVji3uVnQJbi0FT9p4mBQX7aWYcVFSf/YetFKmg+3J1BRqL/mbFlCCQ0XXk35GDW0tffGVc0ofsAvwGPKdT5RUlX54G38oj+7Rlx+2UfjCIhX8zGf2UHqLJoKZYxKF9WNbINbQ4LUvzL9Q/wQI8HR8l0yV5GIZs4Z/VuMC1ixSGeHYKKu2wUeWtKgj/Q+lNkuOJJZ+dEVKKj4HemlZ6k/isu8i+HfeNtPV945Du0TBv8pH5APAYicz/sGuUNY9Qgr9Ps5PcpgBSSgAB0Kxme65/OkNfQRu99oMGNo1yB7/tPaeVsg5ze7FMsihBxDWwfKUAkpLaM/9xe0VSC9a67lS0dekMgfXoITX2H37H7+iqq4v9DfjA1qF+OQJ34M2QkS1VijJVNStt1J64YvmwkNfZ6axZUObpGpptxCtdhuD6HFgJdot0boH0OT/rcuDKoCFsXk1BjZXAxyztpWRFj+UUlJWPGHe4IDWofIWHtTAB1UlHPhrY3Jh6MHEW9jaYIbNp0QqQZeSixOgFBIFi4zXE9kOkkTBcANvDsmnspkW5+cc6zPaOH5p4vcM3KIaK7AVjW9xMCN8tww6kkK6kzhzpB9yyOfc/4BxT22/v9nAXyLrP0gGGq9s9Y1qp5drvOyARKYeGqZ1F5v/ipGOBtcY/lk/NP7D7VVJsOs9eOtWM+3XkNp+Hk5K8gD/x1lfSTAl6We1PcarAHc5p+BOYfldi752xzp9sXAMBKJ36jjBVV8lHvb/x2/xfjeBw0Hk+z23gHGS+oecTtxe/m0o3w77bSKPwCNhWkmM1IKJUlear3HiSRwq+pvTyjrMSKeLHKGnHE+Pv6TRsRwmJcZvkFE/jPpEnTnYEJv6s41ifsALhbCWZhXvwSRn2yDSsTAGyQ2febgEEZx6mop6ItcJ3j9GBTdFFV4hefZLHthnczZELUhqU8Uc/K3DX5xwWLZSmquptU2Va2DrBOIHMydXBxXqQVYFZ+vVquQEP03f+O2qz6q5/jrRAIVFYOXfqMY8tTiDDRHJ7+qtRtE9dAsUVZ4KdQPc3PdguZ3+vJllYSb5kvtBzFgamUs0So4x7Vc4QHSLqyt5yg1ubB87BDnE5OV12NVSQ9VvfEq3BjDrvmaS0DvTQgW2x1UjDweez8CPS2/l8E+3qn4B9a72/DmYICSP95eKuB/8ZZ/DRMYwQKmfKMV3RrRXpytIyBwXCtclYrpDDUu8j66Pl1ERHgsRyGPnWXsay0bA+Ig3SYdfmFreP6uITGsV86i0JreaqpucSfymuRrgO6a+nfeyHDMWZAa2jOI2rtjouuc1xKpAkHO0F0bIIn2STIWeS3XMIB9PfErxENgXyjjPNC1LpZ3wwzJlcqXp9Olsr0surxTpEs5dV2HGKURgmARY+E1M3vaRGbpfCw30LTIELKA7GI0aIqhb+eer/8C6aT1/3hPUBYaNEiF/2WATKXJLtPhtetkaR1qsT8UUcpS6NxTPmxgJhWwKlPFPBOf6vd2Lvlt5ENCnhdLH4cyqLtOjpMxbep9vOyIbpRXbEVHGpTIZ0Y9zyuKncSHyB1QZThAtfk7ByP470pDWZ+jZ5Pv7GOUyKK3yWiTdbl4TaZ+L6X4GWgisUkeD9amwWWEy1Fo+pHM+KPDQHWgaodzuCqsjH4Hf7f5YAR3tv3usb7IFIFAgxwF1Rd4VSDuxGBdpakwtsDIlJr3RrsTvR6AMgzse8sXWjhbz9qr+u3M5ygqjCTPkfNsvco/LqErXF36AXnP9LmB0QsKYfLq7ceNfMV+NoSB+KDY9Yj5DHOrjD0XQL37+03IU2DOXehbM8ReovGeUu/kR9/Aq4YVCg4PdyXbaTd4RhjIiFBaqTP0M6AklHf7IbnWVJZag88CjwXe3l7+NMUudZCBo8EdEm0AUE8cFBFzH0LBunmaLlf5IwqWFbABNBwzUzr7qOHMkG8ZHFGQzIIQTMMPEtOBLOhBo2qI9Q8JLmyTRI62FEsb8Lalc1j2ElxshjoqVazCv+g2J+fmqXXLYNLCFujzTd+QNEsYmObWLr9d7ypbBxQEX0cMZiEoc0EVGQpRKMFJd0SMAAA=" 
+                 style="width: 60px; height: 60px; border-radius: 10px;" alt="BGMI">
+        </div>
+        
+        <p style="font-size: 13px; color: #c9d1d9; line-height: 1.6;">
+            Bhai, BGMI ke liye ekdum premium aur safe files tayyar ho rahi hain. Jald hi yaha dhamaka hoga, stay connected!
+        </p>
+        <button class="btn-stay">STAY TUNED →</button>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2026 SWARUP PREMIUM STORE V1.
+</div>
+
+</body>
+</html>
